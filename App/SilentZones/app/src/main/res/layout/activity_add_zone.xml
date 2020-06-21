@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddZone">
+
+    <EditText
+        android:id="@+id/diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:hint="Enter Diameter of zone"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="10dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/submitDiameter"
+        android:onClick="onDraw"
+        android:text="Draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/look"
+        android:text="Looking Good?"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="100dp"
+        />
+
+    <Button
+        android:id="@+id/submitZone"
+        android:onClick="onSubmit"
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom = "9dp"
+        android:layout_marginEnd = "11dp"
+        />
+
+    </fragment>
